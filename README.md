@@ -42,7 +42,7 @@ With our inherited classes, we can override methods to give each animal unique b
 *   The base `Animal` class has a `virtual` method: `public virtual void Eat()`.
 *   In the `Lion` class, we **override** it: `public override void Eat() { // Logic to check for correct food }`
 
-Now, you can have a list of `Animal` objects, and when you call `animal.MakeSound()` on each one, it will perform the correct action (roar, hiss, etc.) without you needing to know the specific type.
+Now, you can have a list of `Animal` objects, and when you call `animal.Eat()` on each one, it will perform the correct action (Lion eats meat chunk, zebra eats grass) without you needing to know the specific type.
 
 #### 3. Encapsulation (Getters and Setters)
 
