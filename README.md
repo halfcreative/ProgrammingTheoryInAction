@@ -27,13 +27,17 @@ This is a perfect scenario for inheritance. We can create a base `Animal` class 
     *   Properties: `name`, `age`, `hungerLevel`
     *   Methods: `Eat()`, `Sleep()`, `MakeSound()`
 
-*   **`Lion` (Child of `Animal`):**
+*   **`Tiger` (Child of `Animal`):**
     *   Inherits all properties and methods from `Animal`.
-    *   Could have a specific property like `maneSize`.
+    *   Overrides `Eat()` and `MakeSound()` for unique behavior.
 
-*   **`Snake` (Child of `Animal`):**
+*   **`Deer` (Child of `Animal`):**
     *   Inherits from `Animal`.
-    *   Could have a specific property like `isVenomous`.
+    *   Overrides `Eat()` and `MakeSound()` for unique behavior.
+
+*   **`Penguin` (Child of `Animal`):**
+    *   Inherits from `Animal`.
+    *   Overrides `Eat()` and `MakeSound()` for unique behavior.
 
 #### 2. Polymorphism (Method Overriding)
 
@@ -74,7 +78,7 @@ To meet the project requirements and create a complete, simple game loop, the mi
 
 ### OOP Implementation
 *   A base `Animal` class demonstrating **encapsulation** for its properties (like hunger).
-*   At least two specific animal classes (e.g., `Lion`, `Snake`) demonstrating **inheritance**.
+*   Three specific animal classes (`Tiger`, `Deer`, `Penguin`) demonstrating **inheritance**.
 *   A `virtual` method in the base class (e.g., `MakeSound()`) that is overridden in child classes to demonstrate **polymorphism**.
 *   A manager script (e.g., `GameManager` or `Zookeeper`) with simple methods like `FeedAnimal()` to demonstrate **abstraction**.
 
@@ -85,7 +89,7 @@ To meet the project requirements and create a complete, simple game loop, the mi
 *   A Game Over screen that displays the final score and provides "Restart" and "Quit" options.
 
 ### Art & Assets
-*   Simple 3D models for at least two animal types (can be primitive shapes like spheres and cubes).
+*   Animal models will be from the [Animals Free Animated Low Poly 3D Models](https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727) asset pack.
 *   A simple plane or terrain for the zoo ground.
 *   Basic sound effects for at least one animal action (e.g., eating or making a sound).
 
