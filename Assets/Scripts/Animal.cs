@@ -39,7 +39,6 @@ public class Animal : MonoBehaviour
     private float hungerIncreaseRate = 2f; // How many hunger points per second
 
 
-    // Update is called once per frame
     private void Update()
     {
         // Hunger increases over time, a basic simulation of animal needs.
