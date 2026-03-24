@@ -85,7 +85,7 @@ To meet the project requirements and create a complete, simple game loop, the mi
 *   A Game Over screen that displays the final score and provides "Restart" and "Quit" options.
 
 ### Art & Assets
-*   Simple 3D models for at least two animal types (can be primitive shapes like spheres and cubes).
+*   Animal models will be from the [Animals Free Animated Low Poly 3D Models](https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727) asset pack.
 *   A simple plane or terrain for the zoo ground.
 *   Basic sound effects for at least one animal action (e.g., eating or making a sound).
 
