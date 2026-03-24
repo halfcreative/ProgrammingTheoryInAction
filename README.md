@@ -63,15 +63,31 @@ Abstraction is about hiding complex implementation details behind a simple inter
 
 ## MVP Objectives
 
-To meet the project requirements, the minimum viable product will include:
+To meet the project requirements and create a complete, simple game loop, the minimum viable product will include:
 
-*   A base `Animal` class.
-*   At least two specific animal classes inheriting from `Animal` (e.g., `Lion`, `Snake`).
-*   Clear implementation of all four OOP principles.
-*   Simple 3D models for at least two animal types (can be primitive shapes).
+### Core Gameplay Mechanics
+*   A score or "Zoo Happiness" metric that changes based on animal welfare.
+*   Animals' hunger increases over time, which negatively affects the score.
+*   Player can click on an animal to select it.
+*   Player can click a "Feed" button for a selected animal to decrease its hunger and increase the score.
+*   A simple "Game Over" condition (e.g., score drops to zero or a timer runs out).
+
+### OOP Implementation
+*   A base `Animal` class demonstrating **encapsulation** for its properties (like hunger).
+*   At least two specific animal classes (e.g., `Lion`, `Snake`) demonstrating **inheritance**.
+*   A `virtual` method in the base class (e.g., `MakeSound()`) that is overridden in child classes to demonstrate **polymorphism**.
+*   A manager script (e.g., `GameManager` or `Zookeeper`) with simple methods like `FeedAnimal()` to demonstrate **abstraction**.
+
+### UI / User Experience
+*   A Main Menu scene with "Start Game" and "Quit Game" buttons.
+*   A persistent UI in the main game scene to display the current score/happiness and game timer (if applicable).
+*   A simple UI panel that appears when an animal is selected, showing its stats and action buttons.
+*   A Game Over screen that displays the final score and provides "Restart" and "Quit" options.
+
+### Art & Assets
+*   Simple 3D models for at least two animal types (can be primitive shapes like spheres and cubes).
 *   A simple plane or terrain for the zoo ground.
-*   Basic UI to display a selected animal's information (name, hunger, etc.).
-*   Player interaction to perform at least one action (e.g., a "Feed" button).
+*   Basic sound effects for at least one animal action (e.g., eating or making a sound).
 
 ## Stretch Goals
 
