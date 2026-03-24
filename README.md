@@ -17,8 +17,6 @@ https://learn.unity.com/pathway/junior-programmer/unit/apply-object-oriented-pri
 
 The player manages a small zoo. They can add different types of animals to habitats. Each animal has unique behaviors, sounds, and needs. The player's job is to keep the animals happy by feeding them and taking care of them.
 
-This concept is simple enough to complete for the project but complex enough to be a fantastic showcase for all the required programming principles.
-
 ### How it Demonstrates OOP Principles
 
 #### 1. Inheritance (Parent/Child Classes)
@@ -70,6 +68,8 @@ To meet the project requirements, the minimum viable product will include:
 *   A base `Animal` class.
 *   At least two specific animal classes inheriting from `Animal` (e.g., `Lion`, `Snake`).
 *   Clear implementation of all four OOP principles.
+*   Simple 3D models for at least two animal types (can be primitive shapes).
+*   A simple plane or terrain for the zoo ground.
 *   Basic UI to display a selected animal's information (name, hunger, etc.).
 *   Player interaction to perform at least one action (e.g., a "Feed" button).
 
@@ -77,9 +77,22 @@ To meet the project requirements, the minimum viable product will include:
 
 If time permits, the following features would be great additions:
 
-*   More diverse animal types with unique properties.
-*   Different types of food, with animals having preferences.
-*   A "happiness" metric for animals.
-*   Animations and particle effects for feedback.
-*   Sound effects for animal actions.
-*   A `Zookeeper` class to manage player actions and inventory.
+*   **Programming:**
+    *   More diverse animal types with unique properties.
+    *   Different types of food, with animals having preferences.
+    *   A "happiness" metric for animals.
+    *   A `Zookeeper` class to manage player actions and inventory.
+    *   Saving and loading the zoo's state.
+*   **Art & Visuals:**
+    *   More detailed 3D models for animals and a zookeeper character.
+    *   Animations for animal behaviors (eating, sleeping, making sounds).
+    *   Habitat models (enclosures, trees, water sources).
+    *   Particle effects for feedback (e.g., hearts for happiness).
+    *   A simple day/night cycle.
+*   **Audio:**
+    *   Sound effects for animal actions and UI interactions.
+    *   Ambient background music or environmental sounds.
+*   **Gameplay:**
+    *   Player movement/control of the zookeeper character.
+    *   A simple economy system for buying animals and food.
+    *   More complex UI, including an inventory system.
