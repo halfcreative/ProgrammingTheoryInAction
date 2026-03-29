@@ -65,8 +65,7 @@ public class PlayerController : MonoBehaviour
 
     private void Feed(Animal animal)
     {
-        // Implement feeding logic here
-        Debug.Log("Feeding " + animal.name);
         animal.Eat();
+        GameManager.Instance.AddScoreOnFeed();
     }
 }

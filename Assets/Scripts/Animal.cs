@@ -43,6 +43,11 @@ public class Animal : MonoBehaviour
     {
         // Hunger increases over time, a basic simulation of animal needs.
         HungerLevel += hungerIncreaseRate * Time.deltaTime;
+
+        if (HungerLevel >= 100)
+        {
+            Die();
+        }
     }
 
 
@@ -61,5 +66,13 @@ public class Animal : MonoBehaviour
     public virtual void MakeSound()
     {
         Debug.Log("The animal makes a generic sound.");
+    }
+
+    private void Die()
+    {
+        Debug.Log($"{AnimalName} has starved!");
+        GameManager.Instance.AnimalDied(this);
+        GameManager.Instance.GameOver(); // Triggers the game over state
+        Destroy(gameObject);
     }
 }
